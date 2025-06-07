@@ -6,4 +6,47 @@
 .menu-wrapper{
     width: min(1410px, 100%);
     margin-inline: auto;
+    padding: 15px 25px;
+}
+
+.el-megamenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.el-megammenu__column{
+    flex: 0 1 50%;
+    display: grid;
+}
+
+.el-megammenu__2column{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.el-megamenu__2rows{
+    grid-template-rows: auto;
+}
+
+.el-megamenu__grid{
+    grid-template-areas: 
+        "l1 r1"
+        "l2 r2";
+}
+
+.el-megamenu__grid--l1{
+    grid-area: l1;
+}
+
+.el-megamenu__grid--l2{
+    grid-area: l2;
+}
+
+.el-megamenu__grid--r1{
+    grid-area: r1;
+}
+
+.el-megamenu__grid--r2{
+    grid-area: r2;
 }
