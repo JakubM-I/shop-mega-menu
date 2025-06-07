@@ -1,0 +1,9 @@
+.page-wrapper{
+    width: min(1410px, 100%);
+    margin-inline: auto;
+}
+
+.menu-wrapper{
+    width: min(1410px, 100%);
+    margin-inline: auto;
+}
