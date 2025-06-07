@@ -13,7 +13,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    font-family: "Roboto", sans-serif;
 }
 
 .el-megammenu__column{
@@ -49,4 +50,41 @@
 
 .el-megamenu__grid--r2{
     grid-area: r2;
+}
+
+.el-megamenu__item{
+    padding: 15px;
+    height: 100%;
+}
+
+.el-megamenu__itemTitle{
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 12px;
+    border-block-end: 1px solid #1F29F4A6
+}
+
+.el-megamenu__lists{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.el-megamenu__lists li{
+    margin-bottom: 10px;
+}
+
+.el-megamenu__lists li:last-child{
+    margin-bottom: 0;
+}
+
+.el-megamenu__lists a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    transition: color 350ms ease-in-out;
+}
+
+.el-megamenu__lists a:hover{
+    color: #1F29F4;
 }
