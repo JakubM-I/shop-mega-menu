@@ -1,37 +1,6 @@
-html{
-    box-sizing: border-box;
-}
-*, ::after, ::before{
-    box-sizing: inherit;
-}
-
-.page-wrapper{
-    width: min(1410px, 100%);
-    margin-inline: auto;
-}
-
-.menu-wrapper{
-    width: min(1410px, 100%);
-    margin-inline: auto;
-    padding: 15px 25px;
-    border: 1px solid #767474;
-
-    @media (width < 1024px) {
-        width: 80%;
-        margin-inline: 0 auto;
-    }
-
-    @media (width < 568px) {
-        padding-inline: 10px;
-    }
-}
-
 .el-megamenu{
+    box-sizing: border-box;
     width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: flex-start; */
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-family: "Roboto", sans-serif;
@@ -39,6 +8,10 @@ html{
     @media (width < 1024px) {
         grid-template-columns: 1fr;
     }
+}
+
+*, ::after, ::before{
+    box-sizing: inherit;
 }
 
 .el-megammenu__column{
@@ -97,12 +70,12 @@ html{
     grid-area: r2;
 }
 
-.el-megamenu__item{
+#eltrex-megamenu .el-megamenu__item{
     padding: 15px;
     height: 100%;
 }
 
-.el-megamenu__itemTitle{
+#eltrex-megamenu .el-megamenu__itemTitle{
     display: block;
     position: relative;
     font-size: 16px;
@@ -115,7 +88,7 @@ html{
     }
 }
 
-.el-megamenu__itemTitle::after{
+#eltrex-megamenu .el-megamenu__itemTitle::after{
     content: "";
     position: absolute;
     /* display: block; */
@@ -136,22 +109,22 @@ html{
       }
 } */
 
-.el-megamenu__lists{
+#eltrex-megamenu .el-megamenu__lists{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.el-megamenu__lists li{
+#eltrex-megamenu .el-megamenu__lists li{
     margin-bottom: 7px;
     padding-block: 2px;
 }
 
-.el-megamenu__lists li:last-child{
+#eltrex-megamenu .el-megamenu__lists li:last-child{
     margin-bottom: 0;
 }
 
-.el-megamenu__lists a {
+#eltrex-megamenu .el-megamenu__lists a {
     display: block;
     font-size: 15px;
     line-height: 1.3;
@@ -164,7 +137,7 @@ html{
     }
 }
 
-.el-megamenu__lists a:hover{
+#eltrex-megamenu .el-megamenu__lists a:hover{
     @media (768px < width){
         color: #1F29F4;
         transform: translateX(5px);
