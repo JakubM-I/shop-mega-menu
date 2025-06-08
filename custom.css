@@ -1,3 +1,6 @@
+#MenuPozycja-0 .FormatEdytor{
+    width: 100%;
+}
 .el-megamenu{
     box-sizing: border-box;
     width: 100%;
@@ -141,5 +144,61 @@
     @media (768px < width){
         color: #1F29F4;
         transform: translateX(5px);
+    }
+}
+
+
+.Listing .ListingNawigacja {
+    justify-content: flex-start;
+}
+
+.Listing .ListingNawigacjaGora .IndexStron{
+        order: 4;
+    width: fit-content;
+    margin-inline-start: auto;
+}
+
+.Listing .ListingNawigacjaGora .IndexStron > b,
+.Listing .ListingNawigacjaGora .IndexStron > span {
+    display: none;
+}
+
+.Listing .ListingNawigacjaGora .SposobWyswietlania{
+    order: 3;
+    width: fit-content;
+}
+
+.Listing .ListingNawigacjaGora .Sortowanie{
+    order: 1;
+    width: fit-content;
+}
+
+.Listing .ListingNawigacjaGora .Sortowanie form b{
+    display: none;
+}
+
+.Listing .ListingNawigacjaGora .IloscProdStronie{
+        order: 2;
+    width: fit-content;
+}
+
+.Listing .ListingNawigacjaGora .IloscProdStronie form b{
+    display: none;
+}
+
+.Listing .ListingWierszeKontener{
+    @media (width < 1024px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.Listing .ListingWierszeKontener .Wiersz {
+    @media (width < 1024px){
+        flex: 1 1 45%;
+    }
+
+    @media (width < 458px){
+        flex: 1 1 51%;
     }
 }
